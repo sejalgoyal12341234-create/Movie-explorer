@@ -5,10 +5,12 @@ import Movies from "./Pages/Movies";
 import Error from "./Pages/Error";
 import Favourite from "./Pages/Favourite";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
